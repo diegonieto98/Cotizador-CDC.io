@@ -231,6 +231,8 @@
         };
 
         const buscarproducto = () =>{
+		
+            const fs = require('fs');	
             const data = fs.readFileSync('database/productos.json', 'utf8');
             data = JSON.parse(data);
 
