@@ -108,7 +108,6 @@
     </nav>
     <div>
   <script>
-
         const Totales = (tableresumen, indice) => {
             var precioTotal = 0;
             var cantidad = 0;
@@ -233,8 +232,7 @@
         };
 
         const buscarproducto = () =>{
-
-            let data ='<%- JSON.stringify(productoscarnes)%>';
+            const data = fs.readFileSync('database/productos.json', 'utf8');
             data = JSON.parse(data);
 
             const tableNuevo = document.getElementById("tabla-producto-nuevo");
