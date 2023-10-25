@@ -755,7 +755,7 @@
                 eficiencia = 0;
             }
             else{
-                costocarne = costocarne *((eficiencia/100) - 1);
+                costocarne = costocarne *(1-(eficiencia/100));
             };
             
             if (descuento.length == 0){
