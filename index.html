@@ -738,7 +738,7 @@
             var productoselect =  document.getElementById("productoselect");
             var idseleccion = Number(productoselect.value) - 1;
 
-            var producto = data[idseleccion].Productos;
+            var producto = data[idseleccion].values("Productos");
             var precio = Number(data[idseleccion].Precio);
             var codigoproducto = data[idseleccion].Codigo;
             var costocarne = Number(data[idseleccion].Costo);
