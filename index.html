@@ -464,7 +464,7 @@
                     <label class="form-label">Fecha:</label>
                 </td>
                 <td>
-                    <input type="text" class="form-control-sm" id="fecha_cotizacion" value="<%= newSince %>">
+                    <input type="text" class="form-control-sm" id="fecha_cotizacion">
                 </td>
             </tr>
             <tr>
@@ -478,7 +478,7 @@
                     <label class="form-label">Vigencia Cotización:</label>
                 </td>
                 <td>
-                    <input type="text" class="form-control-sm" id="fecha_plazo" value="<%= newUntil %>">
+                    <input type="text" class="form-control-sm" id="fecha_plazo">
                 </td>
             </tr>
             <tr>
@@ -532,7 +532,7 @@
             <td>
                     <select name="productoselect" id="productoselect" class="form-select">
                         <% for (var i = 0 ; i < productoscarnes.length; i++) {%>
-                            <option value="<%= productoscarnes[i].IDPRD %>"><%= productoscarnes[i].Productos %></option>
+                            <option value="<%= productoscarnes[i].IDPRD %>"></option>
                         <% } %>
                     </select>
             </td>
